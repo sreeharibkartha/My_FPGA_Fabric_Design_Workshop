@@ -95,11 +95,9 @@ always @(posedge div_clk) begin
         counter_out <= counter_out + 1;
 end
 
-endmodule```
+endmodule
+'''
   
-
-
-
 ---
 
 ## Behavioral Simulation & Verification
