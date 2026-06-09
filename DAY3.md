@@ -114,7 +114,7 @@ Flip-Flops
 BRAM
 IO Blocks
 
-##Utilization Report
+## Utilization Report
 <img width="680" height="451" alt="Screenshot 2026-06-10 000721" src="https://github.com/user-attachments/assets/aa7ad352-a903-472e-a753-3c2ba870c57f" />
 
 
