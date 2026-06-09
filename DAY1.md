@@ -55,7 +55,5 @@
 
 ---
 
-## Simulation Results & Observations
-* Reset Check: When reset is high, counter goes to 0000.
-* Counting Check: Counter increments smoothly on every clock edge.
+
 
