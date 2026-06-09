@@ -1,4 +1,4 @@
-# Day 5: Cranking the RVMYTH RISC-V Core on Custom SOFA Fabric
+# Day 5: RVMYTH RISC-V Core on Custom SOFA Fabric
 
 ## Overview
 Today was the final : taking the RVMYTH RISC-V core, integrating it with our custom SOFA FPGA fabric, and pushing the whole thing through the OpenFPGA and VTR toolchain. The implementation spat out a mountain of timing, utilization, routing, and simulation reports. We analyzed these to prove the processor actually mapped to the silicon correctly.
