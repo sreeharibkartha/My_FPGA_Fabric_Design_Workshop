@@ -81,12 +81,12 @@ ila_0 your_instance_name (
 );
 ```
 
-##Signal Probes:
+## Signal Probes:
 clk: Main system clock
 reset: To watch my reset triggers
 out: Monitoring the core output bus
 
-##Constraints Used
+## Constraints Used
 ```
 set_property PACKAGE_PIN V6 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
@@ -104,10 +104,10 @@ connect_debug_port dbg_hub/clk [get_nets clk_IBUF_BUFG]
 
 ```
 
-##Utilization Analysis
+## Utilization Analysis
 The utilization report displayed FPGA resource consumption.
 
-##Resources Used
+## Resources Used
 LUTs
 LUTRAM
 Flip-Flops
@@ -117,10 +117,14 @@ IO Blocks
 ##Utilization Report
 <img width="680" height="451" alt="Screenshot 2026-06-10 000721" src="https://github.com/user-attachments/assets/aa7ad352-a903-472e-a753-3c2ba870c57f" />
 
-##Timing Analysis Summary
+
+
+## Timing Analysis Summary
 <img width="1011" height="222" alt="Screenshot 2026-06-10 000738" src="https://github.com/user-attachments/assets/6a96e91d-cc1d-4ade-9920-35fc16cc9bbd" />
 
-##Power Analysis
+
+
+## Power Analysis
 Power analysis was performed after implementation.
 
 ##The report included:
@@ -131,17 +135,17 @@ Clock power
 Logic power
 Signal power
 
-##Power Analysis Output
+## Power Analysis Output
 <img width="861" height="357" alt="Screenshot 2026-06-10 000759" src="https://github.com/user-attachments/assets/f7f2f3fa-b828-4203-bc40-65183841a117" />
 
-##Key Takeaways from Today
+## Key Takeaways from Today
 1. Complexity Scaling is Real
 Jumping to a RISC-V core meant routing took way longer, the silicon footprint exploded, and meeting timing got a lot harder.
 
 2. Constraints Make or Break You
 If I didn't set up that XDC file correctly, Vivado would have thrown the logic anywhere, missed timing closure, and the ILA wouldn't have synced properly.
 
-##Conclusion
+## Conclusion
   
 Day 3 was a massive success. Going from a simple counter to synthesizing, routing, and debugging a complete Mythcore processor on an FPGA fabric really connected the dots on how industry-level RTL flows work in the real world.
 
