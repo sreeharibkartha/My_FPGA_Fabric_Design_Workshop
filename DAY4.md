@@ -191,7 +191,7 @@ The following important files were generated during the OpenFPGA flow:
 7)report_timing.setup.rpt	Setup timing report
 8)report_timing.hold.rpt	Hold timing report
 9)vpr_stdout.log	VPR execution log
-10)0power.rpt	Power analysis report
+10)power.rpt	Power analysis report
 
 ## Key Learnings
 1)Understood SOFA FPGA architecture
