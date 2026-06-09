@@ -182,24 +182,24 @@ The report included:
 The following important files were generated during the OpenFPGA flow:
 
 ## File	Description
-counter.blif	BLIF netlist generated after synthesis
-counter.net	Netlist connectivity
-counter.place	Placement report
-counter.route	Routing report
-counter.sdf	Timing delay information
-counter_post_synthesis.v	Post synthesis Verilog netlist
-report_timing.setup.rpt	Setup timing report
-report_timing.hold.rpt	Hold timing report
-vpr_stdout.log	VPR execution log
-power.rpt	Power analysis report
+1)counter.blif	BLIF netlist generated after synthesis
+2)counter.net	Netlist connectivity
+3)counter.place	Placement report
+4)counter.route	Routing report
+5)counter.sdf	Timing delay information
+6)counter_post_synthesis.v	Post synthesis Verilog netlist
+7)report_timing.setup.rpt	Setup timing report
+8)report_timing.hold.rpt	Hold timing report
+9)vpr_stdout.log	VPR execution log
+10)0power.rpt	Power analysis report
 
 ## Key Learnings
-Understood SOFA FPGA architecture
-Learned OpenFPGA execution flow
-Performed FPGA fabric generation
-Analyzed timing reports
-Observed setup and hold violations
-Applied timing constraints using SDC
-Performed post-synthesis simulation
-Analyzed FPGA power consumption
-Explored generated implementation reports
+1)Understood SOFA FPGA architecture
+2)Learned OpenFPGA execution flow
+3)Performed FPGA fabric generation
+4)Analyzed timing reports
+5)Observed setup and hold violations
+6)Applied timing constraints using SDC
+7)Performed post-synthesis simulation
+8)Analyzed FPGA power consumption
+9)Explored generated implementation reports
