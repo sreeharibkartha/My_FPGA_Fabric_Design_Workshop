@@ -108,15 +108,15 @@ endmodule
   * Confirmed that the synchronous reset instantly zeros the output.
 
 ### Lab Output Waveform
-> 📸 How to add your picture here: Open this file on GitHub, click the Edit (pencil) icon, delete the text on the line below, and drag-and-drop your waveform screenshot right there.
+<img width="1151" height="488" alt="first1" src="https://github.com/user-attachments/assets/c8d429b3-a468-4ab6-9e98-937480245dc5" />
 
-👉 DRAG AND DROP YOUR SIMULATION WAVEFORM SCREENSHOT HERE 👈
 
 ---
 
 ## RTL Elaboration Stage
 * What it does: Converts our raw Verilog text code into an RTL schematic representation.
 * Why it matters: It provides a visual circuit diagram to verify if the tool understood our input ports and code structure correctly before synthesis.
+<img width="1162" height="542" alt="second" src="https://github.com/user-attachments/assets/483bdb06-e71f-4721-8863-0c7cd12aeba1" />
 
 ---
 
@@ -138,9 +138,7 @@ endmodule
   * Slack Calculation: Defined as $\text{Slack} = \text{Required Time} - \text{Arrival Time}$. A positive slack indicates that our design meets timing successfully.
 
 ### Timing Summary Snapshot
-> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Vivado Design Timing Summary screenshot.
-
-👉 DRAG AND DROP YOUR TIMING SUMMARY SCREENSHOT HERE 👈
+<img width="1036" height="217" alt="fifth" src="https://github.com/user-attachments/assets/208c8864-f7d7-41d8-96b2-499261111cb5" />
 
 ---
 
@@ -149,9 +147,7 @@ endmodule
 * Tracked Resources: Monitors LUTs, Flip-Flops, I/O Pins, and Block RAM (BRAM).
 
 ### Utilization Statistics Report
-> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Device Utilization table screenshot.
-
-👉 DRAG AND DROP YOUR UTILIZATION REPORT SCREENSHOT HERE 👈
+<img width="950" height="353" alt="sixth" src="https://github.com/user-attachments/assets/8d9fb260-ea51-425f-a26c-c1e7543a3620" />
 
 ---
 
@@ -164,9 +160,8 @@ endmodule
   * Signal line routing power.
 
 ### Power Analysis Graph
-> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Power Report screenshot.
+<img width="951" height="403" alt="seventh" src="https://github.com/user-attachments/assets/d2000a62-2e50-41d6-a4d8-d68fa030ec88" />
 
-👉 DRAG AND DROP YOUR POWER REPORT SCREENSHOT HERE 👈
 
 ---
 
