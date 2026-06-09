@@ -97,3 +97,82 @@ end
 
 endmodule
 
+
+
+---
+
+## Behavioral Simulation & Verification
+* Purpose: Running simulation in Vivado to check our circuit logic before burning it on the chip.
+* Key Verifications:
+  * Checked if the primary clock is toggling correctly.
+  * Verified that the counter register increments on every positive edge.
+  * Confirmed that the synchronous reset instantly zeros the output.
+
+### Lab Output Waveform
+> 📸 How to add your picture here: Open this file on GitHub, click the Edit (pencil) icon, delete the text on the line below, and drag-and-drop your waveform screenshot right there.
+
+👉 DRAG AND DROP YOUR SIMULATION WAVEFORM SCREENSHOT HERE 👈
+
+---
+
+## RTL Elaboration Stage
+* What it does: Converts our raw Verilog text code into an RTL schematic representation.
+* Why it matters: It provides a visual circuit diagram to verify if the tool understood our input ports and code structure correctly before synthesis.
+
+---
+
+## Logic Synthesis Flow
+* Definition: Translates our RTL schematic into actual hardware primitives specific to the FPGA.
+* Target Resources: Maps the logic functions to LUTs, Flip-Flops, and Carry Chains.
+* Key Tasks Performed:
+  * Carry out logic optimization to remove redundant gates.
+  * Generate initial hardware resource estimation.
+  * Initiate the timing calculation engine.
+
+---
+
+## Timing Analysis Checks
+* Goal: Verifies if electrical data signals arrive at the destination registers within the required clock cycle limits.
+* Critical Parameters Checked:
+  * Setup Timing: Ensures new data stabilizes before the next active clock edge arrives.
+  * Hold Timing: Ensures data remains steady for a minimum duration after the clock edge passes.
+  * Slack Calculation: Defined as $\text{Slack} = \text{Required Time} - \text{Arrival Time}$. A positive slack indicates that our design meets timing successfully.
+
+### Timing Summary Snapshot
+> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Vivado Design Timing Summary screenshot.
+
+👉 DRAG AND DROP YOUR TIMING SUMMARY SCREENSHOT HERE 👈
+
+---
+
+## Hardware Device Utilization
+* Overview: Vivado generates custom consumption reports showing exactly how much of the physical FPGA chip resources our design is occupying.
+* Tracked Resources: Monitors LUTs, Flip-Flops, I/O Pins, and Block RAM (BRAM).
+
+### Utilization Statistics Report
+> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Device Utilization table screenshot.
+
+👉 DRAG AND DROP YOUR UTILIZATION REPORT SCREENSHOT HERE 👈
+
+---
+
+## Power Analysis Estimation
+* Objective: Estimates the thermal and power footprint of our circuit layout on the hardware.
+* Power Components Tracked:
+  * Dynamic power (active switching logic).
+  * Static power (leakage current when idle).
+  * Dedicated clock network power.
+  * Signal line routing power.
+
+### Power Analysis Graph
+> 📸 How to add your picture here: Edit this file on GitHub, delete the line below, and drag-and-drop your Power Report screenshot.
+
+👉 DRAG AND DROP YOUR POWER REPORT SCREENSHOT HERE 👈
+
+---
+
+## Virtual Input/Output (VIO) Debugging
+* Concept: A Xilinx IP core that allows us to monitor and drive internal FPGA signals in real-time.
+* Key Applications:
+  * Eliminates the need for physical onboard push-buttons and LEDs during the initial testing phase.
+  * Allows us to inject stimulus signals (like force reset) directly from the Vivado Hardware Manager screen.
